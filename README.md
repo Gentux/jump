@@ -1,11 +1,23 @@
-jump
+Jump
 ====
 
 Bash functions to move faster with frequent directories
 
 
-Function
-========
+Installation
+------------
+
+Copy the file `jump-completion.bash` in `~/.jump-completion.bash`.
+
+Then :
+
+```
+$ source /path/to/jump/jump.sh
+```
+or copy the content of jump.sh into your bashrc file.
+
+Functions
+---------
 
 ```
 $ cd my/folder
