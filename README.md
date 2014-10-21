@@ -40,3 +40,14 @@ Move to your folder
 $ unmark folder
 ```
 Remove the mark
+
+Variables
+---------
+
+`jump.sh` includes some *export* command too. So, if you have marked the dir `/path/to/directory/foo` you can type:
+
+```
+$ mv proto.file $jfoo
+```
+
+Completion in bash will automatically expand var *$jfoo* as the full path to `foo` directory
