@@ -19,27 +19,27 @@ or copy the content of jump.sh into your bashrc file.
 Functions
 ---------
 
+Create a mark in $MARKPATH folder:
+
 ```
 $ cd my/folder
 $ mark
 ```
-Create a mark in $MARKPATH folder
 
-
+List your marks:
 ```
 $ marks
 ```
-List your marks
 
+Move to your folder:
 ```
 $ jump folder
 ```
-Move to your folder
 
+Remove the mark:
 ```
 $ unmark folder
 ```
-Remove the mark
 
 Variables
 ---------
