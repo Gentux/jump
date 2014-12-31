@@ -1,7 +1,9 @@
 export MARKPATH=$HOME/.marks
-for i in $MARKPATH/*; do
-    export j$(basename $i | tr '.' '_' | tr '-' '_')=$(readlink $i);
-done
+if [ -d $MARKPATH ]; then
+    for i in $MARKPATH/*; do
+        export jmp$(basename $i | tr '.' '_' | tr '-' '_')=$(readlink $i);
+    done
+fi
 
 function jump {
     cd -P $MARKPATH/$1 2>/dev/null || echo "No such mark: $1"
